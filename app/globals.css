@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/** This is a CSS rule that applies to all elements (*) on the page.
+
+Here's what it does:
+
+1.box-sizing: border-box; sets the box model to border-box, which means that the width and height of an element includes its padding and border, 
+rather than just its content.
+2. padding: 0; sets the padding of all elements to 0, which means that there will be no 
+space between the content of an element and its border.
+3. margin: 0; sets the margin of all elements to 0, which means that there will be no space between elements.
+This is often referred to as a "reset" or "normalize" rule, 
+as it resets the default styles of all elements to a consistent baseline. 
+This can help to ensure that all elements on the page have a consistent layout and appearance, 
+and can make it easier to write CSS rules that apply to specific elements.
+
+It's worth noting that this rule is quite broad, and may have unintended consequences if you're not careful.
+For example, if you have an element that relies on a default margin or padding to function correctly, 
+this rule may break its layout. It's often a good idea to use a more targeted approach to resetting styles, 
+rather than applying a blanket rule to all elements.
+
+**/
+
