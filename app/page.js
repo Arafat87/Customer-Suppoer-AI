@@ -1,7 +1,7 @@
 'use client'
-import {Box, Stack, TextField, Button} from '@mui/material'
-import Image from "next/image";
+import {Box, Stack, TextField, Button, Typography} from '@mui/material'
 import { useState } from "react";
+import Image from 'next/image'
 
 export default function Home() {
   const [messages, setMessages] = useState([
@@ -137,7 +137,26 @@ const sendMessage = async () => {
 //It's likely part of a chatbot application that allows the user to interact with the assistant by sending messages.
 
 
+
+
   return (
+    <Box
+    sx={{
+      minHeight: '100vh',  // Full viewport height
+      backgroundImage: `url('../app/image/Background.jpeg')`,  // Replace with your image URL
+      backgroundSize: 'cover',  // Cover the whole area
+      backgroundPosition: 'center',  // Center the image
+      backgroundRepeat: 'repeat',  // Prevent repeating the image
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'center',
+      alignItems: 'center',
+      color: 'black',  // Text color
+    }}
+  >
+    <Typography variant="h3" component="h1">
+    Custom Feedback Collection and Analysis Bot
+    </Typography>
   <Box
   width='100vw'
   height='100vh'
@@ -196,6 +215,7 @@ const sendMessage = async () => {
         <Button variant= 'contained'onClick={sendMessage}>Send</Button>
     </Stack>
     </Stack>
+  </Box>
   </Box>
   )
 }
